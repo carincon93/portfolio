@@ -3,13 +3,10 @@
     "name": "portfolio",
     "type": "module",
     "version": "0.0.1",
-    "packageManager": "pnpm@11.1.2",
     "engines": {
         "node": ">=22.12.0"
     },
     "scripts": {
-        "predeploy": "pnpm run build",
-        "deploy": "gh-pages -d dist",
         "dev": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
@@ -17,11 +14,5 @@
     },
     "dependencies": {
         "astro": "^6.3.3"
-    },
-    "pnpm": {
-        "onlyBuiltDependencies": [
-            "esbuild",
-            "sharp"
-        ]
     }
 }
